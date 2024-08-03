@@ -256,9 +256,6 @@ Services
   text-align: center;
   margin-bottom: 3rem;
 }
-.service-title{
-  text-transform: uppercase;
-}
 .service-icon{
   background: var(--clr-primary-7);
   padding: 0.7rem;
@@ -290,5 +287,75 @@ Services
 /*
 =============== 
 END Services
+===============
+*/
+/*
+=============== 
+Tour
+===============
+*/
+.tour-card{
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  margin-bottom: 2rem;
+  display: flex; 
+  flex-direction: column;
+}
+.tour-card:hover{
+  box-shadow: var(--dark-shadow);
+}
+.tour-img-container{
+  position: relative;
+}
+.tour-image{
+  height: 20rem;
+  object-fit: cover;
+}
+.tour-date{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin: 0;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+}
+.tour-info{
+  padding: 1.25rem 1.5rem;
+}
+.tour-footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*Iconos centrados*/
+.tour-footer .material-symbols-outlined{
+  vertical-align: -7px;
+  margin-right: 0.25rem;
+}
+.tour-footer{
+  color: var(--clr-primary-5);
+  margin-top: auto;
+}
+@media screen and (min-width: 768px){
+  .tours-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-card{
+    flex-basis: calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1170px){
+  .tour-card{
+    flex-basis: calc(33.33% - 2rem);
+  }
+}
+
+/*
+=============== 
+END Tours
 ===============
 */
