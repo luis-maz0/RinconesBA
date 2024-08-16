@@ -53,6 +53,9 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -498,5 +501,72 @@ Footer
 /*
 =============== 
 END Footer
+===============
+*/
+/*
+=============== 
+Navbar
+===============
+*/
+.navbar-logo{
+  width: 6rem;
+}
+.navbar{
+  background: var(--clr-primary-6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+.navbar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.navbar-toggle{
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+  color: var(--clr-white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.navbar-toggle:hover{
+  transform: scale(1.2);
+}
+
+.navbar-link{
+  font-size: 1.2rem;
+  display: block;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  padding: 1rem 2rem;
+}
+.navbar-link:hover{
+  padding-left: 2.25rem;
+  background: var(--clr-primary-1);
+}
+
+/*La idea es crear una clase que se llame .show-links en donde de pueda ver el contenido del menu desplegable.
+Entonces vamos a tener que ocultar por defecto el navbar para que cuando le demos click al mismo, pueda activar
+(agregar la clase show) y ocultarla a la vez (esto con JS).
+*/
+.navbar-links{
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links{
+  height:304px;
+}
+/*
+=============== 
+END Navbar
 ===============
 */

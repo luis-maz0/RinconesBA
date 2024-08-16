@@ -9,10 +9,62 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/icons/Rincones_BA_transparent-.png" type="image/x-icon" />
     <title>RinconesBA | Explora BsAs</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-center-div">
+        <!-- nav header -->
+        <div class="navbar-header">
+          <img
+            src="images/icons/Rincones_BA_transparent-.png"
+            alt="logo rincones BA"
+            class="navbar-logo"
+          />
+          <button type="button" class="navbar-toggle" id="navbar-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!-- END nav header -->
+        <!-- Navbar links -->
+        <ul class="navbar-links" id="navbar-links">
+          <!-- Single link -->
+          <li>
+            <!-- Scroll-link para JS -->
+            <a href="#home" class="navbar-link scroll-link">Inicio</a>
+          </li>
+          <!-- END Single link -->
+          <!-- Single link -->
+          <li>
+            <!-- Scroll-link para JS -->
+            <a href="#about" class="navbar-link scroll-link">Nosotros</a>
+          </li>
+          <!-- END Single link -->
+          <!-- Single link -->
+          <li>
+            <!-- Scroll-link para JS -->
+            <a href="#services" class="navbar-link scroll-link">Servicios</a>
+          </li>
+          <!-- END Single link -->
+          <!-- Single link -->
+          <li>
+            <!-- Scroll-link para JS -->
+            <a href="#tours" class="navbar-link scroll-link">Tours</a>
+          </li>
+          <!-- END Single link -->
+          <!-- Single link -->
+          <li>
+            <!-- Scroll-link para JS -->
+            <a href="#gallery" class="navbar-link scroll-link">Galeria</a>
+          </li>
+          <!-- END Single link -->
+        </ul>
+        <!-- END Navbar links -->
+      </div>
+    </nav>
+    <!-- END Navbar -->
     <!-- Header  -->
     <header id="home">
       <!-- navbar -->
@@ -43,7 +95,7 @@
         <!-- About img wrapper -->
         <article class="about-img">
           <img
-            src="Images/Nosotros_Uribelarrea.jpg"
+            src="images/Nosotros_Uribelarrea.jpg"
             alt="Imagen de Uribelarrea"
             class="about-img"
           />
@@ -123,37 +175,42 @@
       <div class="section-title">
         <h2>Nuestros <span>Tours</span></h2>
       </div>
-    </div>
-    <!-- END Section Title -->
+      <!-- END Section Title -->
       <div class="section-center tours-center">
-          <!-- Single tour -->
-          <article class="tour-card">
-            <div class="tour-img-container">
-              <img class="tour-image" src="Images/abbot-tour.jpg" alt="abbott"/>
-              <p class="tour-date">25 de agosto, 2024</p>
-            </div>
-            <div class="tour-info">
-              <h4>Abbot</h4>
-              <p>
-                  Un pequeño y tranquilo pueblo que ofrece una experiencia auténtica del campo bonaerense. Es perfecto para quienes buscan desconectar y disfrutar de la naturaleza.
-              </p>
-            </div>
-            <div class="tour-footer">
-              <p>
-                <span class="material-symbols-outlined"> attach_money </span>
-                85000
-              </p>
-              <p>
-                <span class="material-symbols-outlined"> date_range </span>
-                2 dias
-              </p>
-            </div>
-          </article>
-          <!-- END Single tour -->
         <!-- Single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img class="tour-image" src="Images/uribelarrea-tour.avif" alt="uribelarrea" />
+            <img class="tour-image" src="images/abbot-tour.jpg" alt="abbott" />
+            <p class="tour-date">25 de agosto, 2024</p>
+          </div>
+          <div class="tour-info">
+            <h4>Abbot</h4>
+            <p>
+              Un pequeño y tranquilo pueblo que ofrece una experiencia auténtica
+              del campo bonaerense. Es perfecto para quienes buscan desconectar
+              y disfrutar de la naturaleza.
+            </p>
+          </div>
+          <div class="tour-footer">
+            <p>
+              <span class="material-symbols-outlined"> attach_money </span>
+              85000
+            </p>
+            <p>
+              <span class="material-symbols-outlined"> date_range </span>
+              2 dias
+            </p>
+          </div>
+        </article>
+        <!-- END Single tour -->
+        <!-- Single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img
+              class="tour-image"
+              src="images/uribelarrea-tour.avif"
+              alt="uribelarrea"
+            />
             <p class="tour-date">5 de septiembre, 2024</p>
           </div>
           <div class="tour-info">
@@ -180,13 +237,15 @@
         <!-- Single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img class="tour-image" src="Images/lobos-tour.jpg" alt="lobos" />
+            <img class="tour-image" src="images/lobos-tour.jpg" alt="lobos" />
             <p class="tour-date">10 de septiembre, 2024</p>
           </div>
           <div class="tour-info">
             <h4>Lobos</h4>
             <p>
-                Aunque es más grande que un pueblo, Lobos ofrece una mezcla de historia y naturaleza. La Laguna de Lobos es ideal para actividades al aire libre como pesca y deportes acuáticos.
+              Aunque es más grande que un pueblo, Lobos ofrece una mezcla de
+              historia y naturaleza. La Laguna de Lobos es ideal para
+              actividades al aire libre como pesca y deportes acuáticos.
             </p>
           </div>
           <div class="tour-footer">
@@ -204,13 +263,19 @@
         <!-- Single tour -->
         <article class="tour-card">
           <div class="tour-img-container">
-            <img class="tour-image" src="Images/zapiola-tour.png" alt="zapiola" />
+            <img
+              class="tour-image"
+              src="images/zapiola-tour.png"
+              alt="zapiola"
+            />
             <p class="tour-date">1 de agosto, 2024</p>
           </div>
           <div class="tour-info">
             <h4>Zappiola</h4>
             <p>
-                Este es otro pequeño pueblo que se destaca por su ambiente rural y su cercanía a la naturaleza. Es ideal para una escapada relajante3.
+              Este es otro pequeño pueblo que se destaca por su ambiente rural y
+              su cercanía a la naturaleza. Es ideal para una escapada
+              relajante3.
             </p>
           </div>
           <div class="tour-footer">
@@ -225,140 +290,193 @@
           </div>
         </article>
         <!-- END Single tour -->
+      </div>
     </section>
     <!-- END Tours -->
-     <!-- Contact -->
+    <!-- Contact -->
     <section class="section contact" id="contact">
-        <div class="section-center contact-center">
-            <!-- Contact info -->
-            <article class="contact-title">
-                <h3>¿Querés estar al tanto de los últimos tours, descuentos y más?</h3>
-                <p>Registrate en nuestro newsletter y mantente al tanto</p>
-            </article>
-            <!-- END Contact info -->
-            <!-- Contact form -->
-             <form action="#" class="contact-form">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="tu email" class="form-input"/>
-                <button type="submit" class="btn-submit">Enviar</button> 
-            </form>
-            <!-- END Contact form -->
-        </div>
+      <div class="section-center contact-center">
+        <!-- Contact info -->
+        <article class="contact-title">
+          <h3>
+            ¿Querés estar al tanto de los últimos tours, descuentos y más?
+          </h3>
+          <p>Registrate en nuestro newsletter y mantente al tanto</p>
+        </article>
+        <!-- END Contact info -->
+        <!-- Contact form -->
+        <form action="#" class="contact-form">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="tu email"
+            class="form-input"
+          />
+          <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+        <!-- END Contact form -->
+      </div>
     </section>
-     <!-- ENDContact -->
-      <!-- Gallery -->
-      <section id="gallery">
-        <div class="gallery-center">
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria8.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria10.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria3.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria4.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria5.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria6.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria7.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-          <!-- single image -->
-          <figure class="gallery-container-img">
-              <img src="Images/galeria9.jpeg" alt="imagen galeria 1" class="gallery-img">
-           </figure>
-          <!-- END single image -->
-        </div>
-      </section>
-      <!-- END Gallery -->
-       <!-- Footer -->
-        <footer class="section footer">
-          <!-- Footer links -->
-           <ul class="footer-links">
-              <!-- Single link -->
-               <li>
-                  <!-- Scroll-link para JS -->
-                   <a href="#home" class="footer-link scroll-link">Inicio</a>
-                </li>
-                <!-- END Single link -->
-              <!-- Single link -->
-               <li>
-                  <!-- Scroll-link para JS -->
-                   <a href="#about" class="footer-link scroll-link">Nostros</a>
-                </li>
-                <!-- END Single link -->
-              <!-- Single link -->
-               <li>
-                  <!-- Scroll-link para JS -->
-                   <a href="#services" class="footer-link scroll-link">Servicios</a>
-                </li>
-                <!-- END Single link -->
-              <!-- Single link -->
-               <li>
-                  <!-- Scroll-link para JS -->
-                   <a href="#tours" class="footer-link scroll-link">Tours</a>
-                </li>
-                <!-- END Single link -->
-              <!-- Single link -->
-               <li>
-                  <!-- Scroll-link para JS -->
-                   <a href="#Gallery" class="footer-link scroll-link">Galeria</a>
-                </li>
-                <!-- END Single link -->
-
-           </ul>
-          <!-- END Footer lnks -->
-           <!-- Footer icons -->
-            <ul class="footer-icons">
-              <!-- Single icon -->
-              <li>
-                <a href="https://www.x.com" target="_blank" class="footer-icon">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-              </li>
-              <!-- END Single icon -->
-              <!-- Single icon -->
-              <li>
-                <a href="https://www.facebook.com" target="_blank" class="footer-icon"> 
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-              </li>
-              <!-- END Single icon -->
-              <!-- Single icon -->
-              <li>
-                <a href="https://www.instagram.com" target="_blank" class="footer-icon">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <!-- END Single icon -->
-            </ul>
-           <!-- END Footer icons -->
-            <p class="copyright">
-              copyright &copy; RinconesBA 2024. Todos los derechos reservados
-            </p>
-        </footer>
-       <!-- END Footer -->
-       <script src="https://kit.fontawesome.com/b2dc0e96da.js" crossorigin="anonymous"></script>
+    <!-- ENDContact -->
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="gallery-center">
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria8.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria10.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria3.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria4.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria5.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria6.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria7.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+        <!-- single image -->
+        <figure class="gallery-container-img">
+          <img
+            src="images/galeria9.jpeg"
+            alt="imagen galeria 1"
+            class="gallery-img"
+          />
+        </figure>
+        <!-- END single image -->
+      </div>
+    </section>
+    <!-- END Gallery -->
+    <!-- Footer -->
+    <footer class="section footer">
+      <!-- Footer links -->
+      <ul class="footer-links">
+        <!-- Single link -->
+        <li>
+          <!-- Scroll-link para JS -->
+          <a href="#home" class="footer-link scroll-link">Inicio</a>
+        </li>
+        <!-- END Single link -->
+        <!-- Single link -->
+        <li>
+          <!-- Scroll-link para JS -->
+          <a href="#about" class="footer-link scroll-link">Nosotros</a>
+        </li>
+        <!-- END Single link -->
+        <!-- Single link -->
+        <li>
+          <!-- Scroll-link para JS -->
+          <a href="#services" class="footer-link scroll-link">Servicios</a>
+        </li>
+        <!-- END Single link -->
+        <!-- Single link -->
+        <li>
+          <!-- Scroll-link para JS -->
+          <a href="#tours" class="footer-link scroll-link">Tours</a>
+        </li>
+        <!-- END Single link -->
+        <!-- Single link -->
+        <li>
+          <!-- Scroll-link para JS -->
+          <a href="#Gallery" class="footer-link scroll-link">Galeria</a>
+        </li>
+        <!-- END Single link -->
+      </ul>
+      <!-- END Footer lnks -->
+      <!-- Footer icons -->
+      <ul class="footer-icons">
+        <!-- Single icon -->
+        <li>
+          <a href="https://www.x.com" target="_blank" class="footer-icon">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <!-- END Single icon -->
+        <!-- Single icon -->
+        <li>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <!-- END Single icon -->
+        <!-- Single icon -->
+        <li>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <!-- END Single icon -->
+      </ul>
+      <!-- END Footer icons -->
+      <p class="copyright">
+        copyright &copy; RinconesBA 2024. Todos los derechos reservados
+      </p>
+    </footer>
+    <!-- END Footer -->
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b2dc0e96da.js"
+      crossorigin="anonymous"
+    ></script>
+    
   </body>
 </html>
