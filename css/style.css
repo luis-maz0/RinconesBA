@@ -425,3 +425,33 @@ Contact
 END Contact
 ===============
 */
+/*
+=============== 
+Gallery
+===============
+*/
+.gallery-img{
+  height: 18rem;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-container-img{
+    flex: 0 0 calc(50%);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .gallery-container-img{
+    flex: 0 0 calc(25%);
+  }
+}
+
+/*
+=============== 
+END Gallery
+===============
+*/
