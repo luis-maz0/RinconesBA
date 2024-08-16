@@ -520,13 +520,15 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 2;
 }
+.navbar-center{
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .navbar-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  max-width: 1170px;
-  margin: 0 auto;
 }
 .navbar-toggle{
   background: transparent;
@@ -564,6 +566,35 @@ Entonces vamos a tener que ocultar por defecto el navbar para que cuando le demo
 }
 .show-links{
   height:304px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-toggle{
+    display: none;
+  }
+  .navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .navbar-links{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .navbar-link:hover{
+   padding: 0;
+   background: transparent;
+
+  }
+  .navbar-header{
+    padding: 0;
+  }
+  .navbar-link{
+    padding: 0;
+  }
 }
 /*
 =============== 
