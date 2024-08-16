@@ -176,7 +176,7 @@ Presentation
 */
 .presentation{
     min-height: 100vh;
-    background: var(--clr-primary-5);
+    background: linear-gradient(var(--clr-primary-1), var(--clr-primary-4), var(--clr-primary-3));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,7 +371,7 @@ Contact
   color: var(--clr-white);
 }
 .contact-title p{
-  color: var(--clr-primary-8);
+  color: var(--clr-primary-9);
 }
 .contact-form{
   max-width: 30rem;
@@ -430,11 +430,13 @@ END Contact
 Gallery
 ===============
 */
+
 .gallery-img{
   height: 18rem;
   object-fit: cover;
 }
 @media screen and (min-width: 768px) {
+  
   .gallery-center{
     display: flex;
     flex-wrap: wrap;
@@ -449,9 +451,52 @@ Gallery
     flex: 0 0 calc(25%);
   }
 }
-
 /*
 =============== 
 END Gallery
+===============
+*/
+/*
+=============== 
+Footer
+===============
+*/
+.footer{
+  background: var(--clr-primary-1);
+  text-align: center;
+  padding: 2rem;
+
+}
+.footer-links,.footer-icons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.footer-link{
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.footer-link:hover{
+  color: var(--clr-primary-8);
+}
+.footer-icon{
+  font-size: 2rem;
+  color: var(--clr-primary-8);
+  transition: var(--transition);
+}
+.footer-icon:hover{
+  color: var(--clr-primary-4);
+}
+.copyright{
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+/*
+=============== 
+END Footer
 ===============
 */
