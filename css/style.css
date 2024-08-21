@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
 =============== 
 Fonts
 ===============
@@ -51,7 +58,8 @@ Global Styles
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
@@ -129,11 +137,14 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   /* font-weight: 700; */
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
   color: var(--clr-primary-1);
@@ -179,10 +190,18 @@ Presentation
 */
 .presentation{
     min-height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--clr-primary-1)), color-stop(var(--clr-primary-4)), to(var(--clr-primary-3)));
+    background: -o-linear-gradient(var(--clr-primary-1), var(--clr-primary-4), var(--clr-primary-3));
     background: linear-gradient(var(--clr-primary-1), var(--clr-primary-4), var(--clr-primary-3));
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .presentation-banner{
     width: 100%;
@@ -215,6 +234,8 @@ Presentation
 }
 @media (min-width: 768px) {
     .presentation{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(44,174,186,0.7)), to(rgba(0,0,0,0.7))), url(../Images/Presentation_Laguna_de_lobos_atardecer.jpg) center/cover no-repeat;
+        background: -o-linear-gradient(rgb(44,174,186,0.7), rgba(0,0,0,0.7)), url(../Images/Presentation_Laguna_de_lobos_atardecer.jpg) center/cover no-repeat;
         background: linear-gradient(rgb(44,174,186,0.7), rgba(0,0,0,0.7)), url(../Images/Presentation_Laguna_de_lobos_atardecer.jpg) center/cover no-repeat;
     }
 }
@@ -234,14 +255,24 @@ About
 }
 @media (min-width: 992px){
   .about-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about-img,.about-info{
-    flex-grow: 0;
-    flex-shrink: 0; 
-    flex-basis: calc(50% - 2rem);
-    align-self: center;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; 
+    -ms-flex-preferred-size: calc(50% - 2rem); 
+        flex-basis: calc(50% - 2rem);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*
@@ -276,17 +307,26 @@ Services
 }
 @media screen and (min-width: 576px){
   .services-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .service{
-    flex: 0 0 calc(50% - 1rem);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 1rem);
+            flex: 0 0 calc(50% - 1rem);
   }
 }
 @media screen and (min-width: 992px){
   .service{
-    flex: 0 0 calc(33.33% - 1rem);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33.33% - 1rem);
+            flex: 0 0 calc(33.33% - 1rem);
   }
 }
 /*
@@ -300,14 +340,22 @@ Tour
 ===============
 */
 .tour-card{
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   background: var(--clr-grey-10);
   margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; 
-  flex-direction: column;
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+      -ms-flex-direction: column; 
+          flex-direction: column;
 }
 .tour-card:hover{
-  box-shadow: var(--dark-shadow);
+  -webkit-box-shadow: var(--dark-shadow);
+          box-shadow: var(--dark-shadow);
 }
 .tour-img-container{
   position: relative;
@@ -331,9 +379,15 @@ Tour
   padding: 1.25rem 1.5rem;
 }
 .tour-footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*Iconos centrados*/
 .tour-footer .material-symbols-outlined{
@@ -346,17 +400,24 @@ Tour
 }
 @media screen and (min-width: 768px){
   .tours-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .tour-card{
-    flex-basis: calc(50% - 2rem);
+    -ms-flex-preferred-size: calc(50% - 2rem);
+        flex-basis: calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1170px){
   .tour-card{
-    flex-basis: calc(33.33% - 2rem);
+    -ms-flex-preferred-size: calc(33.33% - 2rem);
+        flex-basis: calc(33.33% - 2rem);
   }
 }
 
@@ -381,10 +442,14 @@ Contact
 }
 .contact-form{
   max-width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .form-input{
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .form-input, .btn-submit{
   padding: 0.375rem 0.75rem;
@@ -401,6 +466,8 @@ Contact
   background: var(--clr-primary-9);
   margin-left: 0.5rem;
   cursor: pointer;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .btn-submit:hover{
@@ -409,21 +476,30 @@ Contact
 }
 @media screen and (min-width: 768px) {
   .contact-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 0.5rem;
   }
   .contact-form{
     /*Strech por defecto*/
-    flex: 1 1 auto;
-    align-self: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     width: 100%;
   }
 }
 @media screen and (min-width: 1170px) {
   .contact-form{
     /*Strech por defecto*/
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /*
@@ -445,17 +521,24 @@ Gallery
 @media screen and (min-width: 768px) {
   
   .gallery-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .gallery-container-img{
-    flex: 0 0 calc(50%);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50%);
+            flex: 0 0 calc(50%);
   }
 }
 
 @media screen and (min-width: 1170px) {
   .gallery-container-img{
-    flex: 0 0 calc(25%);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25%);
+            flex: 0 0 calc(25%);
   }
 }
 /*
@@ -474,22 +557,39 @@ Footer
   padding: 2rem;
 }
 .footer-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1.5rem;
   gap: 1rem;
 }
 .footer-icons{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 2rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 768px){
   .footer-links,.footer-icons{
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .footer-link{
@@ -497,6 +597,8 @@ Footer
   text-transform: capitalize;
   font-size: 1.2rem;
   letter-spacing: var(--spacing);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .footer-link:hover{
@@ -505,6 +607,8 @@ Footer
 .footer-icon{
   font-size: 2rem;
   color: var(--clr-primary-8);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .footer-icon:hover{
@@ -534,7 +638,8 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: var(--dark-shadow);
+  -webkit-box-shadow: var(--dark-shadow);
+          box-shadow: var(--dark-shadow);
   z-index: 2;
 }
 .navbar-center{
@@ -542,9 +647,15 @@ Navbar
   margin: 0 auto;
 }
 .navbar-header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 1rem;
 }
 .navbar-toggle{
@@ -553,10 +664,14 @@ Navbar
   font-size: 2rem;
   color: var(--clr-white);
   cursor: pointer;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .navbar-toggle:hover{
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .navbar-link{
@@ -579,6 +694,8 @@ Entonces vamos a tener que ocultar por defecto el navbar para que cuando le demo
 .navbar-links{
   height: 0;
   overflow: hidden;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .show-links{
@@ -589,15 +706,25 @@ Entonces vamos a tener que ocultar por defecto el navbar para que cuando le demo
     display: none;
   }
   .navbar-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .navbar-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 2rem;
     padding: 0 2rem;
   }
